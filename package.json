@@ -1,21 +1,30 @@
 {
   "name": "express-node-js-app",
   "version": "1.0.0",
-  "description": "A test of Express App",
+  "description": "This is a project for the node.js",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "keywords": [
-    "api",
-    "rest",
-    "express",
     "node",
-    "js"
+    "express",
+    "jwt",
+    "mysql"
   ],
-  "author": "Orlando Garcia Gonzalez",
+  "author": "Orlando García González",
   "license": "ISC",
+  "bugs": {
+    "url": "sf"
+  },
+  "homepage": "",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.20"
   }
 }
