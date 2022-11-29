@@ -33,10 +33,10 @@ user.post("/login", async (req, res, next) => {
     } else {
       return res
         .status(200)
-        .json({ code: 200, message: "USUARIO Y/O CONTRASEÑA INCORRECTOS" });
+        .json({ code: 401, message: "USUARIO Y/O CONTRASEÑA INCORRECTOS" });
     }
   }
-  return res.status(500).json({ code: 500, message: "CAMPOS INCOMPLETOS" });
+  return res.status(200).json({ code: 500, message: "CAMPOS INCOMPLETOS" });
 });
 
 user.get("/", async (req, res, next) => {
